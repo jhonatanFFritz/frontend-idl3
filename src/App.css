@@ -1,38 +1,82 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e0f4fa;
+  font-family: sans-serif;
+}
+.card-container{
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.header{
+  background-color: rgb(18, 37, 145);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
+}
+.header>span{
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+.card{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  border: solid 2px #4b6ddb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.card:hover{
+  background-color: rgb(191, 214, 255);
+}
+.btn{
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}
+.btn-edit{
+  background-color: rgb(76, 65, 230);
+}
+.btn-delete{
+  background-color: rgb(230, 57, 57);
+}
+.btn-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-right:10px;
+  gap: 20px;
+
+}
+.btn-add-task{
+  font-size: 20px;
+  padding: 10px 0;
+  color: rgb(128, 128, 128);
+  border: solid 1px rgb(192, 192, 192);
+  width: 500px;
+
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-add-task:hover{
+  color: rgb(29, 17, 189);
+  border: solid 1px rgb(29, 17, 189);
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
